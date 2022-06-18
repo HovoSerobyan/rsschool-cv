@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'Hammersmith One';
+    src: url('../asets/webfonts/HammersmithOne-Regular.eot');
+    src: url('../asets/webfonts/HammersmithOne-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../asets/webfonts/HammersmithOne-Regular.woff2') format('woff2'),
+    url('../asets/webfonts/HammersmithOne-Regular.woff') format('woff'),
+    url('../asets/webfonts/HammersmithOne-Regular.ttf') format('truetype'),
+    url('../asets/webfonts/HammersmithOne-Regular.svg#HammersmithOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../asets/webfonts/Roboto-Regular.eot');
+    src: url('../asets/webfonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../asets/webfonts/Roboto-Regular.woff2') format('woff2'),
+    url('../asets/webfonts/Roboto-Regular.woff') format('woff'),
+    url('../asets/webfonts/Roboto-Regular.ttf') format('truetype'),
+    url('../asets/webfonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../asets/webfonts/PlayfairDisplay-Bold.eot');
+    src: url('../asets/webfonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../asets/webfonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('../asets/webfonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('../asets/webfonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+    url('../asets/webfonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../asets/webfonts/Roboto-Black.eot');
+    src: url('../asets/webfonts/Roboto-Black.eot?#iefix') format('embedded-opentype'),
+    url('../asets/webfonts/Roboto-Black.woff2') format('woff2'),
+    url('../asets/webfonts/Roboto-Black.woff') format('woff'),
+    url('../asets/webfonts/Roboto-Black.ttf') format('truetype'),
+    url('../asets/webfonts/Roboto-Black.svg#Roboto-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../asets/webfonts/PlayfairDisplay-Regular.eot');
+    src: url('../asets/webfonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../asets/webfonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../asets/webfonts/PlayfairDisplay-Regular.woff') format('woff'),
+    url('../asets/webfonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+    url('../asets/webfonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../asets/webfonts/Roboto-Light.eot');
+    src: url('../asets/webfonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('../asets/webfonts/Roboto-Light.woff2') format('woff2'),
+    url('../asets/webfonts/Roboto-Light.woff') format('woff'),
+    url('../asets/webfonts/Roboto-Light.ttf') format('truetype'),
+    url('../asets/webfonts/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../asets/webfonts/PlayfairDisplay-Bold_1.eot');
+    src: url('../asets/webfonts/PlayfairDisplay-Bold_1.eot?#iefix') format('embedded-opentype'),
+    url('../asets/webfonts/PlayfairDisplay-Bold_1.woff2') format('woff2'),
+    url('../asets/webfonts/PlayfairDisplay-Bold_1.woff') format('woff'),
+    url('../asets/webfonts/PlayfairDisplay-Bold_1.ttf') format('truetype'),
+    url('../asets/webfonts/PlayfairDisplay-Bold_1.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../asets/webfonts/Roboto-Light_1.eot');
+    src: url('../asets/webfonts/Roboto-Light_1.eot?#iefix') format('embedded-opentype'),
+    url('../asets/webfonts/Roboto-Light_1.woff2') format('woff2'),
+    url('../asets/webfonts/Roboto-Light_1.woff') format('woff'),
+    url('../asets/webfonts/Roboto-Light_1.ttf') format('truetype'),
+    url('../asets/webfonts/Roboto-Light_1.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #ccc;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgb(240, 236, 236, 0.0);
+    background-color: rgba(249, 248, 248, 0.15);
+
+}
+
+/*header start*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header__title {
+    text-transform: uppercase;
+    color: black;
+    font-style: italic;
+}
+
+.nav__block {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.nav__list {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.nav__link {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+}
+a:hover{
+    color: red;
+}
+
+/*header end*/
+/*profile start*/
+#profile {
+    background-image: url("../asets/img/Front_end_featured.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.profile_photo {
+    width: 220px;
+    height: 215px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.profile__name {
+    color: white;
+    padding: 80px 150px;
+}
+
+.profile__title {
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 2
+}
+
+.profile__desc {
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: center;
+}
+
+/*profile end*/
+/*contact start*/
+
+.contact__title,
+.summary__title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 35px;
+}
+
+.contact_block {
+    margin-top: 45px;
+}
+
+.contact_item {
+    background-color: #fff;
+    width: 50%;
+    height: 25px;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 50px;
+    box-shadow: 0 1rem 3rem rgba(194, 178, 178, 0.18);
+}
+
+.contact_desc {
+    color: #000;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.fa-location-dot,
+.fa-phone,
+.fa-envelope,
+.fa-linkedin,
+.fa-github,
+.fa-discord {
+    color: black;
+}
+
+.contact_link {
+    margin-left: 15px;
+    color: black;
+}
+
+/*contact end*/
+/*summari start*/
+
+.summary {
+    width: 50%;
+    margin-left: 50%;
+    box-shadow: 0 1rem 3rem rgba(194, 178, 178, 0.18);
+}
+
+/*summari end*/
+/*skills start*/
+#skills {
+    margin: 50px;
+}
+
+.skills__title,
+.code__title,
+.education__title,
+.languages__title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 35px;
+}
+
+.summary__desc {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.5;
+
+}
+
+.skills__link {
+    list-style-type: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #c8e0d8;
+    margin: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.skills__item {
+    margin-left: 30px;
+
+}
+
+.fa-css3-alt,
+.fa-html5,
+.fa-sass,
+.fa-js,
+.fa-react,
+.fa-git-square,
+.git,
+.fa-node,
+.fa-laptop-code {
+    margin-left: 15px;
+    font-size: 40px;
+}
+
+.skills__item {
+    text-transform: uppercase;
+}
+
+/*skills end*/
+/*code start*/
+code {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#code {
+    box-shadow: 0 1rem 3rem rgba(194, 178, 178, 0.18);
+}
+
+/*code end*/
+
+/*education start*/
+
+.education__item {
+    width: 70%;
+    height: 90px;
+    margin: 15px;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 155px;
+    background: white;
+
+}
+
+.education__item__title {
+    margin: 10px;
+}
+
+/*languages start*/
+.languages__block {
+    text-align: center;
+    margin: 15px;
+}
+
+.languages__list {
+    width: 100%;
+    list-style-type: none;
+    font-size: 25px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background: white;
+    color: black;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+}
+
+/*languages end*/
+/*footer start*/
+footer{
+    background: #eeeeee;
+}
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_git{
+    font-size: 50px;
+}
+.autor{
+    text-align: center;
+}
